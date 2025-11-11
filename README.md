@@ -70,7 +70,7 @@ root
 - **Commodities Analyzed**: Rice, Wheat, Onion, Potato, Tomato (5 major commodities)
 - **Markets**: Thousands of wholesale markets across India
 
-# Pipeline Architecture
+## Pipeline Architecture
 
 ### Processing Steps
 
@@ -285,4 +285,16 @@ Coefficients: [0.42, 0.58, -0.03, 0.15, -0.02]
 - **Serverless Compute**: ~3 minutes
 - **Classic Compute** (4 workers, 16 cores): ~2 minutes
 
+## Repository Structure
+```
+PySpark_Data_Processing/
+├── src/
+│   └── data_analysis_pyspark.ipynb    # Main pipeline notebook
+├── data/
+│   └── daily_market_prices/           # CSV files (2022-2025)
+├── output/
+│   └── processed_commodity_data/      # Parquet results
+├── screenshots/
+└── README.md                          # This file
+```
 ---
